@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Random String Display from Google Sheets</title>
+    <title>Table</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
+        table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
 
-        p {
-            margin-top: 20px;
-            font-size: 20px;
-        }
+th {
+  background-color: #f2f2f2;
+}
+
+input[type="checkbox"] {
+  margin: 4px;
+}
+
+input[type="checkbox"]:disabled {
+  opacity: 0.5;
+}
+
+input[type="checkbox"]:disabled:checked {
+  background-color: green;
+}
+
+input[type="checkbox"]:disabled:not(:checked) {
+  background-color: red;
+}
     </style>
 </head>
 <body>
